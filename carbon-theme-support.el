@@ -121,7 +121,7 @@
   "Critical face is for information that requires immediate action."
   :type 'color :group 'carbon-theme-light)
 
-(defcustom carbon-dark-foreground "#ECEFF4" ;; Snow Storm 3  / nord  6
+(defcustom carbon-dark-foreground "#f4f4f4" ;; Snow Storm 3  / nord  6
   "Default foreground color"
   :type 'color :group 'carbon-theme-dark)
 
@@ -856,6 +856,19 @@ background color that is barely perceptible."
    '(diff-refine-removed            ((t (:inherit carbon-faded
                                          :strike-through t))))
 
+   ;; --- rainbow delimeters -----------------------------------------------
+   '(rainbow-delimiters-depth-1-face ((t (:foreground "#be95ff"))))
+   '(rainbow-delimiters-depth-1-face ((t (:foreground "#78a9ff"))))
+   '(rainbow-delimiters-depth-1-face ((t (:foreground "#fa4d56"))))
+   '(rainbow-delimiters-depth-1-face ((t (:foreground "#42be65"))))
+   '(rainbow-delimiters-depth-1-face ((t (:foreground "#f1c21b"))))
+   '(rainbow-delimiters-depth-1-face ((t (:foreground "#9f1853"))))
+   '(rainbow-delimiters-depth-1-face ((t (:foreground "#08bdba"))))
+   '(rainbow-delimiters-depth-1-face ((t (:foreground "#a7f0ba"))))
+   '(rainbow-delimiters-depth-1-face ((t (:foreground "#00539a"))))
+   '(rainbow-delimiters-unmatched-face ((t (:foreground "#a2191f"))))
+   '(rainbow-delimiters-mismatched-face ((t (:foreground "#a2191f"))))
+   
    ;; --- icomplete --------------------------------------------------------
    '(icomplete-first-match          ((t (:inherit carbon-strong))))
    '(icomplete-selected-match       ((t (:inherit carbon-strong))))
