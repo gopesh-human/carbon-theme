@@ -137,7 +137,7 @@
   "Subtle color is used to suggest a physical area on the screen."
   :type 'color :group 'carbon-theme-dark)
 
-(defcustom carbon-dark-faded "#262626" ;;
+(defcustom carbon-dark-faded "#363636" ;;
   "Faded face is for information that are less important."
   :type 'color :group 'carbon-theme-dark)
 
