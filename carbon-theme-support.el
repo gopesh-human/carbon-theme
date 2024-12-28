@@ -129,15 +129,15 @@
   "Default background color"
   :type 'color :group 'carbon-theme-dark)
 
-(defcustom carbon-dark-highlight "#262626" ;; Polar Night 1 / nord  1
+(defcustom carbon-dark-highlight "#363636" ;; Polar Night 1 / nord  1
   "Highdark color is used to highdark part of the screen."
   :type 'color :group 'carbon-theme-dark)
 
-(defcustom carbon-dark-subtle "#393939" ;; Polar Night 2 / nord  2
+(defcustom carbon-dark-subtle "#262626" ;; Polar Night 2 / nord  2
   "Subtle color is used to suggest a physical area on the screen."
   :type 'color :group 'carbon-theme-dark)
 
-(defcustom carbon-dark-faded "#565656" ;;
+(defcustom carbon-dark-faded "#262626" ;;
   "Faded face is for information that are less important."
   :type 'color :group 'carbon-theme-dark)
 
