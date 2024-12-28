@@ -133,11 +133,11 @@
   "Highdark color is used to highdark part of the screen."
   :type 'color :group 'carbon-theme-dark)
 
-(defcustom carbon-dark-subtle "#525252" ;; Polar Night 2 / nord  2
+(defcustom carbon-dark-subtle "#393939" ;; Polar Night 2 / nord  2
   "Subtle color is used to suggest a physical area on the screen."
   :type 'color :group 'carbon-theme-dark)
 
-(defcustom carbon-dark-faded "#393939" ;;
+(defcustom carbon-dark-faded "#565656" ;;
   "Faded face is for information that are less important."
   :type 'color :group 'carbon-theme-dark)
 
