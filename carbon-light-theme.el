@@ -19,11 +19,11 @@
 ;; The theme began.
 
 ;;; Code:
-(deftheme carbon)
+(deftheme carbon-light)
 
 ;;;; Configuration options:
 
-(defgroup carbon nil
+(defgroup carbon-light nil
   "Carbon theme options.
 The theme has to be reloaded after changing anything in this group."
   :group 'faces)
@@ -31,23 +31,23 @@ The theme has to be reloaded after changing anything in this group."
 ;;;; Theme definition:
 
 (let ((colors '(;; Theme colors
-                (bg        "#161616")
-                (bg2       "#262626")
-                (bg3       "#393939")
+                (bg        "#f2f4f8")
+                (bg2       "#e0e0e0")
+                (bg3       "#dde1e6")
                 (bg4       "#525252")
-                (fg        "#dde1e6")
-                (fg2       "#f2f4f8")
-                (fg3       "#ffffff")
+                (fg        "#161616")
+                (fg2       "#374747")
+                (fg3       "#000000")
                 (red       "#fa4d56")
-                (orange    "#f1c21b")
-                (teal      "#3ddbd9")
-                (purple    "#be95ff")
-                (blue      "#33b1ff")
-                (pink      "#ff7eb6")
-                (green     "#74e792")
+                (orange    "#ff6f00")
+                (teal      "#08bdba")
+                (purple    "#673ab7")
+                (blue      "#0f62fe")
+                (pink      "#ee5396")
+                (green     "#42be65")
                 ))
       (faces '(;; default / basic faces
-               (cursor :background ,fg)
+               (cursor :background ,fg2)
                (default :background ,bg :foreground ,fg)
                (error :foreground ,red)
                (ffap :foreground ,fg3)
@@ -518,6 +518,8 @@ The theme has to be reloaded after changing anything in this group."
                (magit-signature-error :foreground ,red)
                (magit-cherry-unmatched :foreground ,teal)
                (magit-cherry-equivalent :foreground ,purple)
+               ;; window-divider
+               (window-divider :foreground ,fg)
                ;; ;; markdown
                ;; (markdown-blockquote-face :foreground ,dracula-yellow
                ;;                           :slant italic)
@@ -563,7 +565,7 @@ The theme has to be reloaded after changing anything in this group."
                ;; (message-cited-text-4 :foreground ,fg2)
                ;; (message-mml :foreground ,dracula-green :weight normal)
                ;; mini-modeline
-               (mini-modeline-mode-line :inherit mode-line :height 0.1 :box nil)
+               (mini-modeline-mode-line :inherit :height 0.1 :box nil)
                ;; ;; mu4e
                ;; (mu4e-unread-face :foreground ,dracula-pink :weight normal)
                ;; (mu4e-view-url-number-face :foreground ,dracula-purple)
@@ -619,7 +621,6 @@ The theme has to be reloaded after changing anything in this group."
                (org-document-info-keyword :foreground ,bg4)
                (org-document-title :weight bold :foreground ,fg)
                (org-done :foreground ,green)
-               (org-drawer :foreground ,blue)
                (org-ellipsis :foreground ,bg4)
                (org-footnote :foreground ,blue)
                (org-formula :foreground ,pink)
@@ -841,7 +842,7 @@ The theme has to be reloaded after changing anything in this group."
                )))
 
   (apply #'custom-theme-set-faces
-         'carbon
+         'carbon-light
          (let ((expand-with-func
                 (lambda (func spec)
                   (let (reduced-color-list)
@@ -872,10 +873,10 @@ The theme has to be reloaded after changing anything in this group."
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'carbon)
+(provide-theme 'carbon-light)
 
 ;; Local Variables:
 ;; indent-tabs-mode: nil
 ;; End:
 
-;;; carbon-theme.el ends here
+;;; carbon-light-theme.el ends here
