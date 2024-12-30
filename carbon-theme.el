@@ -50,16 +50,16 @@ The theme has to be reloaded after changing anything in this group."
                (cursor :background ,fg)
                (default :background ,bg :foreground ,fg)
                (error :foreground ,red)
-               ;; (ffap :foreground ,fg4)
+               (ffap :foreground ,fg3)
                (fringe :background ,bg :foreground ,fg2)
                (header-line :inherit 'mode-line)
                (highlight :foreground ,fg3 :background ,bg3)
                (hl-line :background ,bg3)
-               ;; (info-quoted-name :foreground ,dracula-orange)
-               ;; (info-string :foreground ,dracula-yellow)
+               (info-quoted-name :foreground ,blue)
+               (info-string :foreground ,green)
                (lazy-highlight :foreground ,fg3 :background ,bg3)
                (line-number :slant italic :foreground ,bg4 :background ,bg)
-               ;; (match :background ,dracula-yellow :foreground ,dracula-bg)
+               (match :background ,purple :foreground ,bg)
                (menu :background ,bg2 :inverse-video nil :foreground ,fg)
                (minibuffer-prompt :weight bold :foreground ,pink)
                (mode-line :background ,bg2
@@ -67,13 +67,13 @@ The theme has to be reloaded after changing anything in this group."
                (mode-line-inactive
                  :background ,bg2 :inverse-video nil
                  :foreground ,fg2 :box ,bg2)
-               ;; (read-multiple-choice-face :inherit completions-first-difference)
+               (read-multiple-choice-face :inherit completions-first-difference)
                (region :background ,bg3 :extend nil)
                (shadow :foreground ,bg4)
                (success :foreground ,green)
-               ;; (tooltip :foreground ,dracula-fg :background ,dracula-current)
-               ;; (trailing-whitespace :background ,dracula-orange)
-               (vertical-border :foreground ,bg2)
+               (tooltip :foreground ,fg :background ,bg2)
+               (trailing-whitespace :background ,orange)
+               (vertical-border :foreground ,bg2 :background ,bg2)
                (warning :foreground ,orange)
                ;; ;; syntax / font-lock
                (font-lock-builtin-face :foreground ,purple)
@@ -83,50 +83,50 @@ The theme has to be reloaded after changing anything in this group."
                (font-lock-doc-face :inherit comment)
                (font-lock-function-name-face :foreground ,pink :weight bold)
                (font-lock-keyword-face :foreground ,blue :weight bold)
-               ;; (font-lock-negation-char-face :foreground ,dracula-cyan)
+               (font-lock-negation-char-face :foreground ,teal)
                (font-lock-number-face :foreground ,purple)
                (font-lock-operator-face :foreground ,pink)
-               ;; (font-lock-preprocessor-face :foreground ,dracula-orange)
-               ;; (font-lock-regexp-grouping-backslash :foreground ,dracula-cyan)
-               ;; (font-lock-regexp-grouping-construct :foreground ,dracula-purple)
+               (font-lock-preprocessor-face :foreground ,orange)
+               (font-lock-regexp-grouping-backslash :foreground ,teal)
+               (font-lock-regexp-grouping-construct :foreground ,purple)
                (font-lock-string-face :foreground ,green)
-               ;; (font-lock-type-face :inherit font-lock-builtin-face)
+               (font-lock-type-face :inherit font-lock-builtin-face)
                (font-lock-variable-name-face :foreground ,fg :weight bold)
                (font-lock-warning-face :inherit warning)
                ;; auto-complete
-               ;; (ac-completion-face :underline t :foreground ,dracula-pink)
+               (ac-completion-face :underline t :foreground ,pink)
                ;; ;; ansi-color
-               ;; (ansi-color-black :foreground ,dracula-bg :background ,dracula-bg)
-               ;; (ansi-color-bright-black :foreground "black" :background "black")
-               ;; (ansi-color-blue :foreground ,dracula-purple :background ,dracula-purple)
-               ;; (ansi-color-bright-blue :foreground ,dracula-purple
-               ;;                         :background ,dracula-purple
-               ;;                         :weight bold)
-               ;; (ansi-color-cyan :foreground ,dracula-cyan :background ,dracula-cyan)
-               ;; (ansi-color-bright-cyan :foreground ,dracula-cyan
-               ;;                         :background ,dracula-cyan
-               ;;                         :weight bold)
-               ;; (ansi-color-green :foreground ,dracula-green :background ,dracula-green)
-               ;; (ansi-color-bright-green :foreground ,dracula-green
-               ;;                          :background ,dracula-green
-               ;;                          :weight bold)
-               ;; (ansi-color-magenta :foreground ,dracula-pink :background ,dracula-pink)
-               ;; (ansi-color-bright-magenta :foreground ,dracula-pink
-               ;;                            :background ,dracula-pink
-               ;;                            :weight bold)
-               ;; (ansi-color-red :foreground ,dracula-red :background ,dracula-red)
-               ;; (ansi-color-bright-red :foreground ,dracula-red
-               ;;                        :background ,dracula-red
-               ;;                        :weight bold)
-               ;; (ansi-color-white :foreground ,dracula-fg :background ,dracula-fg)
-               ;; (ansi-color-bright-white :foreground "white" :background "white")
-               ;; (ansi-color-yellow :foreground ,dracula-yellow :background ,dracula-yellow)
-               ;; (ansi-color-bright-yellow :foreground ,dracula-yellow
-               ;;                           :background ,dracula-yellow
-               ;;                           :weight bold)
-               ;; ;; bookmarks
+               (ansi-color-black :foreground ,bg :background ,bg)
+               (ansi-color-bright-black :foreground "black" :background "black")
+               (ansi-color-blue :foreground ,blue :background ,blue)
+               (ansi-color-bright-blue :foreground ,blue
+                                       :background ,blue
+                                       :weight bold)
+               (ansi-color-cyan :foreground ,teal :background ,teal)
+               (ansi-color-bright-cyan :foreground ,teal
+                                       :background ,teal
+                                       :weight bold)
+               (ansi-color-green :foreground ,green :background ,green)
+               (ansi-color-bright-green :foreground ,green
+                                        :background ,green
+                                        :weight bold)
+               (ansi-color-magenta :foreground ,pink :background ,pink)
+               (ansi-color-bright-magenta :foreground ,pink
+                                          :background ,pink
+                                          :weight bold)
+               (ansi-color-red :foreground ,red :background ,red)
+               (ansi-color-bright-red :foreground ,red
+                                      :background ,red
+                                      :weight bold)
+               (ansi-color-white :foreground ,fg :background ,fg)
+               (ansi-color-bright-white :foreground "white" :background "white")
+               (ansi-color-yellow :foreground ,orange :background ,orange)
+               (ansi-color-bright-yellow :foreground ,orange
+                                         :background ,orange
+                                         :weight bold)
+               ;; bookmarks
                ;; (bookmark-face :foreground ,dracula-pink)
-               ;; ;; company
+               ;; company
                ;; (company-echo-common :foreground ,dracula-bg :background ,dracula-fg)
                ;; (company-preview :background ,dracula-current :foreground ,dark-blue)
                ;; (company-preview-common :inherit company-preview
@@ -504,20 +504,20 @@ The theme has to be reloaded after changing anything in this group."
                 :foreground ,pink)
                (magit-diff-lines-boundary :background ,pink)
                (magit-diffstat-added :foreground ,green)
-               (magit-diffstat-removed :foreground red)
-               ;; (magit-log-author :foreground ,dracula-comment)
-               ;; (magit-log-date :foreground ,dracula-comment)
-               ;; (magit-log-graph :foreground ,dracula-yellow)
-               ;; (magit-process-ng :foreground ,dracula-orange :weight bold)
-               ;; (magit-process-ok :foreground ,dracula-green :weight bold)
-               ;; (magit-signature-good :foreground ,dracula-green)
-               ;; (magit-signature-bad :foreground ,dracula-red :weight bold)
-               ;; (magit-signature-untrusted :foreground ,dracula-cyan)
-               ;; (magit-signature-expired :foreground ,dracula-orange)
-               ;; (magit-signature-revoked :foreground ,dracula-purple)
-               ;; (magit-signature-error :foreground ,dracula-cyan)
-               ;; (magit-cherry-unmatched :foreground ,dracula-cyan)
-               ;; (magit-cherry-equivalent :foreground ,dracula-purple)
+               (magit-diffstat-removed :foreground ,red)
+               (magit-log-author :foreground ,bg4)
+               (magit-log-date :foreground ,bg4)
+               (magit-log-graph :foreground ,blue)
+               (magit-process-ng :foreground ,orange :weight bold)
+               (magit-process-ok :foreground ,green :weight bold)
+               (magit-signature-good :foreground ,green)
+               (magit-signature-bad :foreground ,red :weight bold)
+               (magit-signature-untrusted :foreground ,teal)
+               (magit-signature-expired :foreground ,orange)
+               (magit-signature-revoked :foreground ,purple)
+               (magit-signature-error :foreground ,red)
+               (magit-cherry-unmatched :foreground ,teal)
+               (magit-cherry-equivalent :foreground ,purple)
                ;; ;; markdown
                ;; (markdown-blockquote-face :foreground ,dracula-yellow
                ;;                           :slant italic)
