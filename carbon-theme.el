@@ -75,10 +75,10 @@ The theme has to be reloaded after changing anything in this group."
                (trailing-whitespace :background ,orange)
                (vertical-border :foreground ,bg2 :background ,bg2)
                (warning :foreground ,orange)
-               ;; ;; syntax / font-lock
+               ;; syntax / font-lock
                (font-lock-builtin-face :foreground ,purple)
                (font-lock-comment-face :inherit shadow)
-               (font-lock-comment-delimiter-face :inherit shadow)
+               (font-lock-comment-delimiter-face :inherit shadow :weight bold)
                (font-lock-constant-face :weight bold)
                (font-lock-doc-face :inherit comment)
                (font-lock-function-name-face :foreground ,pink :weight bold)
@@ -86,7 +86,7 @@ The theme has to be reloaded after changing anything in this group."
                (font-lock-negation-char-face :foreground ,teal)
                (font-lock-number-face :foreground ,purple)
                (font-lock-operator-face :foreground ,pink)
-               (font-lock-preprocessor-face :foreground ,orange)
+               (font-lock-preprocessor-face :foreground ,pink)
                (font-lock-regexp-grouping-backslash :foreground ,teal)
                (font-lock-regexp-grouping-construct :foreground ,purple)
                (font-lock-string-face :foreground ,green)
@@ -125,48 +125,48 @@ The theme has to be reloaded after changing anything in this group."
                                          :background ,orange
                                          :weight bold)
                ;; bookmarks
-               ;; (bookmark-face :foreground ,dracula-pink)
+               (bookmark-face :foreground ,pink)
                ;; company
-               ;; (company-echo-common :foreground ,dracula-bg :background ,dracula-fg)
-               ;; (company-preview :background ,dracula-current :foreground ,dark-blue)
-               ;; (company-preview-common :inherit company-preview
-               ;;                         :foreground ,dracula-pink)
-               ;; (company-preview-search :inherit company-preview
-               ;;                         :foreground ,dracula-green)
-               ;; (company-scrollbar-bg :background ,dracula-comment)
-               ;; (company-scrollbar-fg :foreground ,dark-blue)
-               ;; (company-tooltip :inherit tooltip)
-               ;; (company-tooltip-search :foreground ,dracula-green
-               ;;                         :underline t)
-               ;; (company-tooltip-search-selection :background ,dracula-green
-               ;;                                   :foreground ,dracula-bg)
-               ;; (company-tooltip-selection :inherit match)
-               ;; (company-tooltip-mouse :background ,dracula-bg)
-               ;; (company-tooltip-common :foreground ,dracula-pink :weight bold)
-               ;; ;;(company-tooltip-common-selection :inherit company-tooltip-common)
-               ;; (company-tooltip-annotation :foreground ,dracula-cyan)
-               ;; ;;(company-tooltip-annotation-selection :inherit company-tooltip-annotation)
-               ;; ;; completions (minibuffer.el)
-               ;; (completions-annotations :inherit font-lock-comment-face)
-               ;; (completions-common-part :foreground ,dracula-green)
-               ;; (completions-first-difference :foreground ,dracula-pink :weight bold)
-               ;; ;; diff
-               ;; (diff-added :background ,dark-green :foreground ,dracula-fg :extend t)
-               ;; (diff-removed :background ,dark-red :foreground ,dracula-fg :extend t)
-               ;; (diff-refine-added :background ,dracula-green
-               ;;                    :foreground ,dracula-bg)
-               ;; (diff-refine-removed :background ,dracula-red
-               ;;                      :foreground ,dracula-fg)
-               ;; (diff-indicator-added :foreground ,dracula-green)
-               ;; (diff-indicator-removed :foreground ,dracula-red)
-               ;; (diff-indicator-changed :foreground ,dracula-orange)
-               ;; (diff-error :foreground ,dracula-red, :background ,dracula-bg
-               ;;             :weight bold)
-               ;; ;; diff-hl
-               ;; (diff-hl-change :foreground ,dracula-orange :background ,dracula-orange)
-               ;; (diff-hl-delete :foreground ,dracula-red :background ,dracula-red)
-               ;; (diff-hl-insert :foreground ,dracula-green :background ,dracula-green)
-               ;; ;; dired
+               (company-echo-common :foreground ,bg :background ,fg)
+               (company-preview :background ,bg2 :foreground ,blue)
+               (company-preview-common :inherit company-preview
+                                       :foreground ,pink)
+               (company-preview-search :inherit company-preview
+                                        :foreground ,green)
+               (company-scrollbar-bg :background ,bg3)
+               (company-scrollbar-fg :foreground ,teal)
+               (company-tooltip :inherit tooltip)
+               (company-tooltip-search :foreground ,green
+                                       :underline t)
+               (company-tooltip-search-selection :background ,green
+                                                 :foreground ,bg)
+               (company-tooltip-selection :inherit match)
+               (company-tooltip-mouse :background ,bg)
+               (company-tooltip-common :foreground ,pink :weight bold)
+               (company-tooltip-common-selection :inherit company-tooltip-common)
+               (company-tooltip-annotation :foreground ,teal)
+               (company-tooltip-annotation-selection :inherit company-tooltip-annotation)
+               ;; completions (minibuffer.el)
+               (completions-annotations :inherit font-lock-comment-face)
+               (completions-common-part :foreground ,green)
+               (completions-first-difference :foreground ,pink :weight bold)
+               ;; diff
+               (diff-added :background ,green :foreground ,fg :extend t)
+               (diff-removed :background ,red :foreground ,fg :extend t)
+               (diff-refine-added :background ,green
+                                  :foreground ,bg)
+               (diff-refine-removed :background ,red
+                                    :foreground ,fg)
+               (diff-indicator-added :foreground ,green)
+               (diff-indicator-removed :foreground ,red)
+               (diff-indicator-changed :foreground ,pink)
+               (diff-error :foreground ,red, :background ,bg
+                           :weight bold)
+               ;; diff-hl
+               (diff-hl-change :foreground ,pink :background ,pink)
+               (diff-hl-delete :foreground ,red :background ,red)
+               (diff-hl-insert :foreground ,green :background ,green)
+               ;; dired
                ;; (dired-directory :foreground ,dracula-green :weight normal)
                ;; (dired-flagged :foreground ,dracula-pink)
                ;; (dired-header :foreground ,fg3 :background ,dracula-bg)
@@ -669,16 +669,16 @@ The theme has to be reloaded after changing anything in this group."
                ;; (powerline-evil-operator-face :inherit powerline-evil-base-face :background ,dracula-pink)
                ;; (powerline-evil-replace-face :inherit powerline-evil-base-face :background ,dracula-red)
                ;; (powerline-evil-visual-face :inherit powerline-evil-base-face :background ,dracula-orange)
-               ;; ;; rainbow-delimiters
-               ;; (rainbow-delimiters-depth-1-face :foreground ,dracula-fg)
-               ;; (rainbow-delimiters-depth-2-face :foreground ,dracula-cyan)
-               ;; (rainbow-delimiters-depth-3-face :foreground ,dracula-purple)
-               ;; (rainbow-delimiters-depth-4-face :foreground ,dracula-pink)
-               ;; (rainbow-delimiters-depth-5-face :foreground ,dracula-orange)
-               ;; (rainbow-delimiters-depth-6-face :foreground ,dracula-green)
-               ;; (rainbow-delimiters-depth-7-face :foreground ,dracula-yellow)
-               ;; (rainbow-delimiters-depth-8-face :foreground ,dark-blue)
-               ;; (rainbow-delimiters-unmatched-face :foreground ,dracula-orange)
+               ;; rainbow-delimiters
+               (rainbow-delimiters-depth-1-face :foreground ,pink :weight bold)
+               (rainbow-delimiters-depth-2-face :foreground ,purple :weight bold)
+               (rainbow-delimiters-depth-3-face :foreground ,teal :weight bold)
+               (rainbow-delimiters-depth-4-face :foreground ,blue :weight bold)
+               (rainbow-delimiters-depth-5-face :foreground ,green :weight bold)
+               (rainbow-delimiters-depth-6-face :foreground ,orange :weight bold)
+               (rainbow-delimiters-depth-7-face :foreground ,red :weight bold)
+               (rainbow-delimiters-depth-8-face :foreground ,orange :weight bold)
+               (rainbow-delimiters-unmatched-face :foreground ,red :weight bold)
                ;; ;; rpm-spec
                ;; (rpm-spec-dir-face :foreground ,dracula-green)
                ;; (rpm-spec-doc-face :foreground ,dracula-pink)
@@ -720,8 +720,8 @@ The theme has to be reloaded after changing anything in this group."
                ;; (shr-h6 :foreground ,dracula-orange)
                ;; ;; slime
                ;; (slime-repl-inputed-output-face :foreground ,dracula-purple)
-               ;; ;; solaire-mode
-               ;; (solaire-default-face :background ,bg2)
+               ;; solaire-mode
+               (solaire-default-face :background ,bg2)
                ;; ;; spam
                ;; (spam :inherit gnus-summary-normal-read :foreground ,dracula-orange
                ;;       :strike-through t :slant oblique)
@@ -760,42 +760,42 @@ The theme has to be reloaded after changing anything in this group."
                ;; (telephone-line-accent-active :background ,dracula-bg :foreground ,dracula-pink)
                ;; (telephone-line-accent-inactive :background ,bg2 :foreground ,dracula-purple)
                ;; (telephone-line-unimportant :background ,dracula-bg :foreground ,dracula-comment)
-               ;; ;; term
-               ;; (term :foreground ,dracula-fg :background ,dracula-bg)
-               ;; (term-color-black :foreground ,dracula-bg :background ,dracula-comment)
-               ;; (term-color-blue :foreground ,dracula-purple :background ,dracula-purple)
-               ;; (term-color-cyan :foreground ,dracula-cyan :background ,dracula-cyan)
-               ;; (term-color-green :foreground ,dracula-green :background ,dracula-green)
-               ;; (term-color-magenta :foreground ,dracula-pink :background ,dracula-pink)
-               ;; (term-color-red :foreground ,dracula-red :background ,dracula-red)
-               ;; (term-color-white :foreground ,dracula-fg :background ,dracula-fg)
-               ;; (term-color-yellow :foreground ,dracula-yellow :background ,dracula-yellow)
-               ;; ;; tree-sitter
-               ;; (tree-sitter-hl-face:attribute :inherit font-lock-constant-face)
-               ;; (tree-sitter-hl-face:comment :inherit font-lock-comment-face)
-               ;; (tree-sitter-hl-face:constant :inherit font-lock-constant-face)
-               ;; (tree-sitter-hl-face:constant.builtin :inherit font-lock-builtin-face)
-               ;; (tree-sitter-hl-face:constructor :inherit font-lock-constant-face)
-               ;; (tree-sitter-hl-face:escape :foreground ,dracula-pink)
-               ;; (tree-sitter-hl-face:function :inherit font-lock-function-name-face)
-               ;; (tree-sitter-hl-face:function.builtin :inherit font-lock-builtin-face)
-               ;; (tree-sitter-hl-face:function.call :inherit font-lock-function-name-face
-               ;;                                    :weight normal)
-               ;; (tree-sitter-hl-face:function.macro :inherit font-lock-preprocessor-face)
-               ;; (tree-sitter-hl-face:function.special :inherit font-lock-preprocessor-face)
-               ;; (tree-sitter-hl-face:keyword :inherit font-lock-keyword-face)
-               ;; (tree-sitter-hl-face:punctuation :foreground ,dracula-pink)
-               ;; (tree-sitter-hl-face:punctuation.bracket :foreground ,dracula-fg)
-               ;; (tree-sitter-hl-face:punctuation.delimiter :foreground ,dracula-fg)
-               ;; (tree-sitter-hl-face:punctuation.special :foreground ,dracula-pink)
-               ;; (tree-sitter-hl-face:string :inherit font-lock-string-face)
-               ;; (tree-sitter-hl-face:string.special :foreground ,dracula-red)
-               ;; (tree-sitter-hl-face:tag :inherit font-lock-keyword-face)
-               ;; (tree-sitter-hl-face:type :inherit font-lock-type-face)
-               ;; (tree-sitter-hl-face:type.parameter :foreground ,dracula-pink)
-               ;; (tree-sitter-hl-face:variable :inherit font-lock-variable-name-face)
-               ;; (tree-sitter-hl-face:variable.parameter :inherit tree-sitter-hl-face:variable
-               ;;                                         :weight normal)
+               ;; term
+               (term :foreground ,fg :background ,bg)
+               (term-color-black :foreground ,bg :background ,bg)
+               (term-color-blue :foreground ,blue :background ,blue)
+               (term-color-cyan :foreground ,teal :background ,teal)
+               (term-color-green :foreground ,green :background ,green)
+               (term-color-magenta :foreground ,pink :background ,pink)
+               (term-color-red :foreground ,red :background ,red)
+               (term-color-white :foreground ,fg :background ,fg)
+               (term-color-yellow :foreground ,orange :background ,orange)
+               ;; tree-sitter
+               (tree-sitter-hl-face:attribute :inherit font-lock-constant-face)
+               (tree-sitter-hl-face:comment :inherit font-lock-comment-face)
+               (tree-sitter-hl-face:constant :inherit font-lock-constant-face)
+               (tree-sitter-hl-face:constant.builtin :inherit font-lock-builtin-face)
+               (tree-sitter-hl-face:constructor :inherit font-lock-constant-face)
+               (tree-sitter-hl-face:escape :foreground ,pink)
+               (tree-sitter-hl-face:function :inherit font-lock-function-name-face)
+               (tree-sitter-hl-face:function.builtin :inherit font-lock-builtin-face)
+               (tree-sitter-hl-face:function.call :inherit font-lock-function-name-face
+                                                  :weight normal)
+               (tree-sitter-hl-face:function.macro :inherit font-lock-preprocessor-face)
+               (tree-sitter-hl-face:function.special :inherit font-lock-preprocessor-face)
+               (tree-sitter-hl-face:keyword :inherit font-lock-keyword-face)
+               (tree-sitter-hl-face:punctuation :foreground ,pink)
+               (tree-sitter-hl-face:punctuation.bracket :foreground ,blue)
+               (tree-sitter-hl-face:punctuation.delimiter :foreground ,blue)
+               (tree-sitter-hl-face:punctuation.special :foreground ,pink)
+               (tree-sitter-hl-face:string :inherit font-lock-string-face)
+               (tree-sitter-hl-face:string.special :foreground ,teal)
+               (tree-sitter-hl-face:tag :inherit font-lock-keyword-face)
+               (tree-sitter-hl-face:type :inherit font-lock-type-face)
+               (tree-sitter-hl-face:type.parameter :foreground ,pink)
+               (tree-sitter-hl-face:variable :inherit font-lock-variable-name-face)
+               (tree-sitter-hl-face:variable.parameter :inherit tree-sitter-hl-face:variable
+                                                       :weight normal)
                ;; ;; undo-tree
                ;; (undo-tree-visualizer-current-face :foreground ,dracula-orange)
                ;; (undo-tree-visualizer-default-face :foreground ,fg2)
